@@ -6,3 +6,4 @@ g++ -o 001 temp/CLONE.cpp
 g++ -o 002 temp/INSTALL.cpp
 ./002
 rm 002
+python3 RUN.py
