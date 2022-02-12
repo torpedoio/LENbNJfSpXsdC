@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.9.10-slim-buster
 
 COPY . .
 
@@ -6,6 +6,7 @@ RUN apt-get update && apt upgrade -y && apt-get install sudo apt-utils -y
 RUN apt-get install -y \
     bash \
     gcc \
+    ffmpeg \
     zip \ 
     wget \
     wkhtmltopdf \
